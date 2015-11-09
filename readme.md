@@ -4,21 +4,21 @@
 
 ## Technologies Used
 
-*1. JQuery & Javascript*
-*2. CSS, including bootstrap*
-*3. Triva API (compliments of http://jservice.io/)*
+*1. JQuery & Javascript
+*2. CSS, including bootstrap
+*3. Triva API (compliments of http://jservice.io/)
 
 ## Existing Features
 
-*1. Starting the game, including player name requests (and rules)*
-*2. Use keystrokes as racing mechanism*
-*3. Random trivia pulled from an API*
+*1. Starting the game, including player name requests (and rules)
+*2. Use keystrokes as racing mechanism
+*3. Random trivia pulled from an API
 
 ## Planned Features
 
-*1. Play against the computer*
-*2. Upload your own character images/gifs*
-*3. Choose your own trivia categories*
+*1. Play against the computer
+*2. Upload your own character images/gifs
+*3. Choose your own trivia categories
 
 ---
 
