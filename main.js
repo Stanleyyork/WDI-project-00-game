@@ -38,22 +38,25 @@ $(function() {
 	  		$('#charA').css('left', moveA);
 	  		// Check if in trivia position and not already taken, if so, ask trivia
 	  		if((triviaPosition("charA", moveA) === true) && (triviaLocations[moveA] === false)){
+				$('.glyphicon').css('color', '#ffa500');
 				triviaLocations[moveA] = true;
 				askTriviaQuestion("charA", playerOne, moveA);
 	  		}
 	  		// Check for winner
-	  		moveA > 750 ? getWinner("charA") : null;
+	  		getWinner("charA", playerOne);
+	  		//moveA > 750 ? getWinner("charA", playerOne) : null;
   		} else if(char === "charB") {
   			// Grab move value and move character
   		  	moveB += moveValue;
   			$('#charB').css('left', moveB);
   			// Check if in trivia position and not already taken, if so, ask trivia
   			if((triviaPosition("charB", moveB) === true) && (triviaLocations[moveB] === false)){
+				$('.glyphicon').css('color', '#ffa500');
 				triviaLocations[moveB] = true;
 				askTriviaQuestion("charB", playerTwo, moveB);
 	  		}
 	  		// Check for winner
-	  		moveB > 750 ? getWinner("charB") : null;
+	  		moveB > 750 ? getWinner("charB", playerTwo) : null;
   		}
 	}
 
@@ -79,23 +82,24 @@ $(function() {
 			var category = data[0].category.title;
 			var triviaValue = data[0].value;
 			console.log(answer);
-			var response = prompt(playerName + ": " + question + " (For " + triviaValue/2 + " jump points; Hint: the category is " + category + ").");
 			
 			// Ask question, receive response and determine outcome
+			var response = prompt(playerName + ": " + question + " (For " + triviaValue/2 + " jump points; Hint: the category is " + category + ").");
 			if(response.toLowerCase() === answer.toLowerCase()){
 				alert("Yes! You get to move " + triviaValue/2 + " spots ahead!");
 				moveChar(char, triviaValue/2);
+				$('.glyphicon').css('color', '#ffd700');
 			} else {
 				triviaLocations[move] = false;
+				$('.glyphicon').css('color', '#ffd700');
 				return false;
 			}
 		});
 	}
 
-	function getWinner(char){
-		if(findCharPosition(char) >= "1000px"){
-			console.log(findCharPosition(char));
-			alert("Congratulations " + char + ", you won!");
+	function getWinner(char, playerName){
+		if(parseInt(findCharPosition(char)) > 1000){
+			alert("Congratulations " + playerName + ", you won!");
 		}
 	}
 
