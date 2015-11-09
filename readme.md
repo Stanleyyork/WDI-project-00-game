@@ -4,24 +4,23 @@
 
 ## Technologies Used
 
-*- JQuery & Javascript*
-*- CSS, including bootstrap*
-*- Triva API (compliments of http://jservice.io/)*
+*1. JQuery & Javascript*
+*2. CSS, including bootstrap*
+*3. Triva API (compliments of http://jservice.io/)*
 
 ## Existing Features
 
-*- Starting the game, including player name requests (and rules)*
-*- Use keystrokes as racing mechanism*
-*- Random trivia pulled from an API*
+*1. Starting the game, including player name requests (and rules)*
+*2. Use keystrokes as racing mechanism*
+*3. Random trivia pulled from an API*
 
 ## Planned Features
 
-*- Play against the computer*
-*- Upload your own character images/gifs*
-*- Choose your own trivia categories*
+*1. Play against the computer*
+*2. Upload your own character images/gifs*
+*3. Choose your own trivia categories*
 
 ---
 
-##### Screenshot (optional)
-
-##### Link to hosted project on GitHub pages or BitBalloon (optional)
+##### Screenshot
+![screen_shot](http://stanleyyork.com/wp-content/uploads/2015/11/thinkbeforeyourace.png)
