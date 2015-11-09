@@ -16,14 +16,14 @@ body {
 }
 
 #rowA {
-	border: 1px solid;
-	border-color: #535353;
+	border: 2px solid;
+	border-color: white;
 	height: 75px;
 }
 
 #rowB {
-	border: 1px solid;
-	border-color: #535353;
+	border: 2px solid;
+	border-color: white;
 	border-top: 0px;
 	height: 75px;
 }
