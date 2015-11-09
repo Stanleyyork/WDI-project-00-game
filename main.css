@@ -1,3 +1,21 @@
-body {
-	
+#board {
+  margin-top: 50px;
+}
+
+#charA {
+	  position: absolute;
+	  top: 0px;
+	  left: 0px;
+	  width: 50px;
+	  height: 50px;
+	  background: url('http://picon.ngfiles.com/534000/portal_534416.gif') no-repeat;
+}
+
+#charB {
+	  position: absolute;
+	  top: 50px;
+	  left: 0px;
+	  width: 50px;
+	  height: 50px;
+	  background: url('http://orig10.deviantart.net/7dda/f/2010/331/9/f/dancing_luigi_sprite_by_zaycko-d33r25b.gif') no-repeat;
 }
