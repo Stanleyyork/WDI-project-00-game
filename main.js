@@ -15,6 +15,9 @@ $(function() {
 		started = true;
 		playerOne = prompt("What is player One's name?");
 		playerTwo = prompt("What is player Two's name?");
+		$('#charA').css('background-image', 'url(http://img-cache.cdn.gaiaonline.com/45ecc7b5733b475d19611875d42b99a2/http://i23.photobucket.com/albums/b396/MASTERLINKX/SuperPaperMario.gif)');
+		$('#charB').css('background-image', 'url(http://orig10.deviantart.net/7dda/f/2010/331/9/f/dancing_luigi_sprite_by_zaycko-d33r25b.gif');
+		$('.glyphicon').css('color', '#ffd700');
 	});
 
 	$(document).keyup(function(e) {

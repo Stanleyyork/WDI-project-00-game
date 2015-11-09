@@ -30,35 +30,31 @@ body {
 
 #l-icon-1 {
 	left: 110px;
-	color: #ffd700;
 }
 #l-icon-2 {
 	left: 410px;
-	color: #ffd700;
 }
 #l-icon-3 {
 	left: 610px;
-	color: #ffd700;
 }
 #l-icon-4 {
 	left: 910px;
-	color: #ffd700;
 }
 #l-icon-5 {
 	left: 110px;
-	color: #ffd700;
 }
 #l-icon-6 {
 	left: 410px;
-	color: #ffd700;
 }
 #l-icon-7 {
 	left: 610px;
-	color: #ffd700;
 }
 #l-icon-8 {
 	left: 910px;
-	color: #ffd700;
+}
+
+.glyphicon {
+	color: white;
 }
 
 #charA {
@@ -67,7 +63,7 @@ body {
 	  left: 5px;
 	  width: 50px;
 	  height: 50px;
-	  background: url('http://img-cache.cdn.gaiaonline.com/45ecc7b5733b475d19611875d42b99a2/http://i23.photobucket.com/albums/b396/MASTERLINKX/SuperPaperMario.gif') no-repeat;
+	  background: no-repeat;
 }
 
 #charB {
@@ -76,5 +72,5 @@ body {
 	  left: 5px;
 	  width: 50px;
 	  height: 50px;
-	  background: url('http://orig10.deviantart.net/7dda/f/2010/331/9/f/dancing_luigi_sprite_by_zaycko-d33r25b.gif') no-repeat;
+	  background: no-repeat;
 }
