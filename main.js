@@ -85,13 +85,23 @@ $(function() {
 			
 			// Ask question, receive response and determine outcome
 			var response = prompt(playerName + ": " + question + " (For " + triviaValue/2 + " jump points; Hint: the category is " + category + ").");
-			if(response.toLowerCase() === answer.toLowerCase()){
+			console.log(response);
+			if(response === null) {
+				alert("With no answer, you move 50 spots back!");
+				moveChar(char, -50);
+				$('.glyphicon').css('color', '#ffd700');
+				return false;
+			} else if(response.toLowerCase() === answer.toLowerCase()){
 				alert("Yes! You get to move " + triviaValue/2 + " spots ahead!");
 				moveChar(char, triviaValue/2);
 				$('.glyphicon').css('color', '#ffd700');
 			} else {
 				triviaLocations[move] = false;
 				$('.glyphicon').css('color', '#ffd700');
+				if(parseInt(findCharPosition(char)) > 750){
+					alert("With a wrong answer, you move 250 spots back!");
+					moveChar(char, -250);
+				}
 				return false;
 			}
 		});
