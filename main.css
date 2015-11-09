@@ -1,10 +1,15 @@
+body {
+	background-color: #fefdfb;
+}
+
 #headerNav {
 	margin-left: 50px;
 	text-align: center;
+	color: #535353;
 }
 
 #board {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -16,7 +21,41 @@
 
 #rowB {
 	border: 1px solid black;
+	border-top: 0px;
 	height: 75px;
+}
+
+#l-icon-1 {
+	left: 110px;
+	color: #ffd700;
+}
+#l-icon-2 {
+	left: 410px;
+	color: #ffd700;
+}
+#l-icon-3 {
+	left: 610px;
+	color: #ffd700;
+}
+#l-icon-4 {
+	left: 910px;
+	color: #ffd700;
+}
+#l-icon-5 {
+	left: 110px;
+	color: #ffd700;
+}
+#l-icon-6 {
+	left: 410px;
+	color: #ffd700;
+}
+#l-icon-7 {
+	left: 610px;
+	color: #ffd700;
+}
+#l-icon-8 {
+	left: 910px;
+	color: #ffd700;
 }
 
 #charA {
