@@ -3,6 +3,7 @@ $(function() {
 	var started = false;
 	var playerOne = '';
 	var playerTwo = '';
+	var winner = false;
 	var moveA = 0;
 	var moveB = 0;
 	var triviaLocations = {100: false, 400: false, 600: false, 900: false};
@@ -21,7 +22,9 @@ $(function() {
 	});
 
 	$(document).keyup(function(e) {
-		if(started === true) {
+		if(winner === true) {
+			alert("Start a new game!");
+		} else if(started === true) {
 			captureKeys(e);
 		}
 	});
@@ -113,6 +116,7 @@ $(function() {
 	function getWinner(char, playerName){
 		if(parseInt(findCharPosition(char)) > 1000){
 			alert("Congratulations " + playerName + ", you won!");
+			winner = true;
 		}
 	}
 
