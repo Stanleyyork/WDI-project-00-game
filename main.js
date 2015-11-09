@@ -96,10 +96,10 @@ $(function() {
 			var response = prompt(playerName + ": " + question + " (For " + triviaValue/2 + " jump points; Hint: the category is " + category + ").");
 			console.log(response);
 			if(response === null) {
+				triviaLocations[move] = false;
 				alert("With no answer, you move 50 spots back!");
 				moveChar(char, -50);
 				$('.glyphicon').css('color', '#ffd700');
-				return false;
 			} else if(response.toLowerCase() === answer.toLowerCase()){
 				alert("Yes! You get to move " + triviaValue/2 + " spots ahead!");
 				moveChar(char, triviaValue/2);
